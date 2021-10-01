@@ -14,14 +14,14 @@
 }
 
 .boards {
-    margin: 20px;
+    min-width: 180px;
+    margin: 10px;
     display: flex;
     flex-direction: column;
     width: 25vw;
 }
 
 .list {
-    min-height: 50vh;
     padding: 20px;
 }
 
