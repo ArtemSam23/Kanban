@@ -5,7 +5,7 @@
 }
 
 .appContainer {
-    margin: 20px;
+    margin: 50px 10px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -15,14 +15,14 @@
 
 .boards {
     min-width: 300px;
-    margin: 10px;
+    margin: 5px;
     display: flex;
     flex-direction: column;
     width: 25vw;
 }
 
 .list {
-    padding: 20px;
+    padding: 10px;
 }
 
 .list__items {
