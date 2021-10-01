@@ -14,7 +14,7 @@
 }
 
 .boards {
-    min-width: 180px;
+    min-width: 300px;
     margin: 10px;
     display: flex;
     flex-direction: column;
