@@ -1,9 +1,10 @@
-const draggables = document.querySelectorAll('.list__items')
-arrayOfDraggables = [... document.querySelectorAll('.list__items')]
 const containers = document.querySelectorAll('.list')
-var copyOfDraggable = null
-var indexOfDragging = null
-var containerFromDrag = null
+const draggables = document.querySelectorAll('.list__items')
+let arrayOfDraggables = null;
+let copyOfDraggable = null;
+let indexOfDragging = null;
+let containerFromDrag = null;
+let lastElement = null;
 
 last = function(arr) {
     return arr[arr.length - 1]
@@ -35,10 +36,10 @@ containers.forEach(container => {
         }
         const afterElement = getDragAfterElement(container, e.clientY)
         const draggable = copyOfDraggable
-        const draggingElemet = document.querySelector('.dragging')
+        const draggingElement = document.querySelector('.dragging')
         if ((arrayOfDraggables[indexOfDragging+1] === afterElement ||
-            (draggingElemet == lastElement && afterElement == undefined)) &&
-            container.contains(draggingElemet)
+            (draggingElement === lastElement && afterElement === undefined)) &&
+            container.contains(draggingElement)
         ){
             draggable.classList.add('hide')
         } else {
