@@ -23,6 +23,7 @@
 
 .list {
     padding: 10px;
+    min-height: 50px;
 }
 
 .list__items {
