@@ -28,6 +28,8 @@ draggables.forEach(draggable => {
 })
 
 containers.forEach(container => {
+    // inserting the copy of draggable element into the new place
+    // works only when dragging over container
     container.addEventListener('dragover', e => {
         e.preventDefault()
 
