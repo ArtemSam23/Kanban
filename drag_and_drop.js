@@ -1,10 +1,9 @@
-const containers = document.querySelectorAll('.list')
 const draggables = document.querySelectorAll('.list__items')
-let arrayOfDraggables = null;
-let copyOfDraggable = null;
-let indexOfDragging = null;
-let containerFromDrag = null;
-let lastElement = null;
+arrayOfDraggables = [... document.querySelectorAll('.list__items')]
+const containers = document.querySelectorAll('.list')
+var copyOfDraggable = null
+var indexOfDragging = null
+var containerFromDrag = null
 
 last = function(arr) {
     return arr[arr.length - 1]
@@ -32,19 +31,16 @@ containers.forEach(container => {
     // works only when dragging over the container
     container.addEventListener('dragover', e => {
         e.preventDefault()
-
-        // saving the container from which we are dragging and last draggable element in this container
         if (containerFromDrag == null) {
             containerFromDrag = container
             lastElement = last(containerFromDrag.querySelectorAll('.list__items'))
         }
-
         const afterElement = getDragAfterElement(container, e.clientY)
         const draggable = copyOfDraggable
-        const draggingElement = document.querySelector('.dragging')
+        const draggingElemet = document.querySelector('.dragging')
         if ((arrayOfDraggables[indexOfDragging+1] === afterElement ||
-            (draggingElement === lastElement && afterElement === undefined)) &&
-            container.contains(draggingElement)
+            (draggingElemet == lastElement && afterElement == undefined)) &&
+            container.contains(draggingElemet)
         ){
             draggable.classList.add('hide')
         } else {

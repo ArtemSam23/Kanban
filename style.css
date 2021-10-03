@@ -5,7 +5,7 @@
 }
 
 .appContainer {
-    margin: 10vh 10px;
+    margin: 20px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -14,8 +14,7 @@
 }
 
 .boards {
-    min-width: 300px;
-    margin: 5px;
+    margin: 20px;
     display: flex;
     flex-direction: column;
     width: 25vw;
