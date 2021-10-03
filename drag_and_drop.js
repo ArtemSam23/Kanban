@@ -33,7 +33,8 @@ containers.forEach(container => {
         if (containerFromDrag == null) {
             containerFromDrag = container
             lastElement = last(containerFromDrag.querySelectorAll('.list__items'))
-        }
+        } // saving the container from witch we are dragging and last draggable element in this container
+
         const afterElement = getDragAfterElement(container, e.clientY)
         const draggable = copyOfDraggable
         const draggingElement = document.querySelector('.dragging')
