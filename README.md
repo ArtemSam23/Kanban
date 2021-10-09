@@ -1,2 +1,12 @@
 # kanban
-It's a templet for drag and drop To Do app, you can try it [here](https://artemsam23.github.io/kanban)
+It's a templet for drag and drop To Do app, you can try it [here](https://artemsam23.github.io/kanban)  
+To set up drag and drop on your project follow this steps:
+1. Add  `dnd.mjs`  to your project
+2. Import function drag_and_drop:
+```js
+import {drag_and_drop} from "(path to dnd.js)"
+```
+3. Pass your html classes for lists and draggable items:
+```js
+drag_and_drop('.list', '.list__items')
+```
