@@ -7,7 +7,7 @@ To set up drag and drop on your project follow this steps:
 ```js
 import {drag_and_drop} from "(path to dnd.js)"
 ```
-4. Pass your html classes for lists and draggable items:
+4. Pass your html classes for lists and its draggable items:
 ```js
 drag_and_drop('.list', '.list__items')
 ```
